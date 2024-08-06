@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block head_title %} Saas {% endblock head_title %}</title>
+</head>
+<body>
+    {% block title %}
+        <h1>{{ page_title }}</h1>
+    {% endblock title %}
+  
+        
+    {% block content  %}
+        <p>Welcome to the home page!</p>
+        <p>{{request.user}} {{request.method}} - {{request.user.is_authenticated}}</p>
+    {% endblock content %}
+    
+</body>
+</html>
