@@ -1,6 +1,14 @@
-.DS_Store
 
+#Ignore vendors static files
+src\staticfiles\vendors
+
+# Ignore local static file root
+# or 'local cdn'
+local-cdn/
+
+.DS_Store
 venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
