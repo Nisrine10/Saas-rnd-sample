@@ -69,6 +69,12 @@ INSTALLED_APPS = [
     # my-apps
     'visits',
     'commando',
+   # Third all auth app
+    'allauth',
+    'allauth.account',
+
+    # Optional -- requires install using `django-allauth[socialaccount]`.
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +85,10 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+     # Add the account middleware:
+    "allauth.account.middleware.AccountMiddleware",
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'saasDjango.urls'
@@ -144,7 +153,21 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# Django allAith Config
+AUTHENTICATION_BACKENDS = [
+  #  ...
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
 
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
+  #  ...
+]
+
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+   
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
