@@ -18,10 +18,10 @@ from django.urls import path, include
 from auth import views as auth_views
 from .views import home_view,about_view
 urlpatterns = [
-    path('',home_view),  #index page
-    path('about/',about_view), 
+    path('',home_view, name='home'),  #index page
     path('login/',auth_views.login_view), #authentication
     path('register/',auth_views.register_view), #
+    path('about/',about_view), 
     path('home/',home_view), 
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
