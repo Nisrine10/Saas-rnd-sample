@@ -1,6 +1,6 @@
-saas-rnd-sample-production-9686.up.railway.app
 
-# SaaS Project
+
+# SaaS-App Project
 
 
 This project is a part of my ongoing journey to master the art of building Software as a Service (SaaS) applications. Through this endeavor, I'm not just learning how to write code but also how to architect scalable, maintainable, and efficient systems. The goal is to create a solid foundation that can be reused across different SaaS products while leveraging modern web development tools and best practices.
@@ -10,17 +10,27 @@ This project is a part of my ongoing journey to master the art of building Softw
 ### 1. Django
 Django is the core framework used to build the backend of this application. It provides robust features like ORM, authentication, and admin panel out of the box, which accelerates the development process.
 
+![Logo](pictures/django.png)
+
+
 ### 2. Tailwind CSS
 Tailwind CSS is utilized for styling the frontend. Its utility-first approach makes it easier to design responsive and clean user interfaces without writing custom CSS.
+
+![Logo](pictures/tailwind.png)
 
 ### 3. htmx
 htmx is used to enhance the interactivity of the web pages without the need for heavy JavaScript frameworks. It allows me to create dynamic UIs with fewer lines of code, making the frontend more responsive and performant.
 
+![Logo](pictures/htmx.png)
+
 ### 4. Neon Postgres
 Neon is a cloud-native Postgres database service used for storing and managing application data. It offers scalability and performance optimizations that are crucial for SaaS applications.
 
+![Logo](pictures/neon.jpg)
+
 ### 5. Redis
 Redis is employed for caching and session management, improving the overall speed and efficiency of the application.
+![Logo](pictures/redis.png)
 
 ## Database Management
 
@@ -48,7 +58,11 @@ Deployment is a crucial part of any SaaS application. In this project, I am expl
 ### Deployment Tools:
 
 - **Docker:** Used to containerize the application, making it easy to deploy across different environments.
+![Logo](pictures/docker.png)
+
 - **Railway:** A platform-as-a-service (PaaS) provider used for hosting the application. Railway simplifies the deployment process by automating environment setups and scaling.
+
+![Logo](pictures/railway.jpg)
 
 ## Getting Started
 
