@@ -10,27 +10,31 @@ This project is a part of my ongoing journey to master the art of building Softw
 ### 1. Django
 Django is the core framework used to build the backend of this application. It provides robust features like ORM, authentication, and admin panel out of the box, which accelerates the development process.
 
-![Logo](pictures/django.png)
+<img src="pictures/django.png" alt="Logo" width="200" />
 
 
 ### 2. Tailwind CSS
 Tailwind CSS is utilized for styling the frontend. Its utility-first approach makes it easier to design responsive and clean user interfaces without writing custom CSS.
 
-![Logo](pictures/tailwind.png)
+<img src="pictures/tailwind.png" alt="Logo" width="200" />
 
 ### 3. htmx
 htmx is used to enhance the interactivity of the web pages without the need for heavy JavaScript frameworks. It allows me to create dynamic UIs with fewer lines of code, making the frontend more responsive and performant.
 
-![Logo](pictures/htmx.png)
+<img src="pictures/htmx.png" alt="Logo" width="200" />
+
 
 ### 4. Neon Postgres
 Neon is a cloud-native Postgres database service used for storing and managing application data. It offers scalability and performance optimizations that are crucial for SaaS applications.
 
-![Logo](pictures/neon.jpg)
+<img src="pictures/neon.jpg" alt="Logo" width="200" />
+
 
 ### 5. Redis
 Redis is employed for caching and session management, improving the overall speed and efficiency of the application.
-![Logo](pictures/redis.png)
+
+<img src="pictures/redis.png" alt="Logo" width="200" />
+
 
 ## Database Management
 
@@ -58,11 +62,15 @@ Deployment is a crucial part of any SaaS application. In this project, I am expl
 ### Deployment Tools:
 
 - **Docker:** Used to containerize the application, making it easy to deploy across different environments.
-![Logo](pictures/docker.png)
+
+<img src="pictures/docker.png" alt="Logo" width="200" />
+
 
 - **Railway:** A platform-as-a-service (PaaS) provider used for hosting the application. Railway simplifies the deployment process by automating environment setups and scaling.
 
-![Logo](pictures/railway.jpg)
+<img src="pictures/railway.jpg" alt="Logo" width="200" />
+
+
 
 ## Getting Started
 
