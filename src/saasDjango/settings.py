@@ -71,6 +71,7 @@ INSTALLED_APPS = [
 # my-apps
     'visits',
     'commando',
+    'profiles',
    # Third all auth app
     "allauth_ui",
     'allauth',
