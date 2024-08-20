@@ -20,5 +20,6 @@ from .models import Subscription,UserSubscription
 #admin.site.register(Subscription, SubscriptionAdmin)
 
 
-admin.site.register(UserSubscription)
+
 admin.site.register(Subscription)
+admin.site.register(UserSubscription)
