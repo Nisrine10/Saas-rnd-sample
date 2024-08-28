@@ -28,8 +28,8 @@ from .views import (
 )
 urlpatterns = [
     path('',home_view, name='home'),  #index page
-    #path('login/',auth_views.login_view), #authentication
-    #path('register/',auth_views.register_view), #
+    path('login/',auth_views.login_view), #authentication
+    path('register/',auth_views.register_view), #
     #path("", landing_views.landing_dashboard_page_view, name='home'),
     path("checkout/sub-price/<int:price_id>/", 
             checkout_views.product_price_redirect_view,
