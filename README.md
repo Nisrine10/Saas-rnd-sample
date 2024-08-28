@@ -56,7 +56,6 @@ The application uses Neon Postgres as the primary database. Neon provides a full
 3. **Set the Connection String in the .env file.**
 
 ## Deployment
-[Visit the Application](https://saas-rnd-sample-production-9686.up.railway.app)
 
 Deployment is a crucial part of any SaaS application. In this project, I am exploring different deployment strategies to ensure that the application can scale effectively and handle traffic spikes.
 
