@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     'commando',
     'checkouts',
     'customers',
+    'landing',
     'profiles',
     'subscriptions',
    # Third all auth app
