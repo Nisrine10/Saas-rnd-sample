@@ -28,7 +28,7 @@ htmx is used to enhance the interactivity of the web pages without the need for 
 Neon is a cloud-native Postgres database service used for storing and managing application data. It offers scalability and performance optimizations that are crucial for SaaS applications.
 
 <img src="pictures/neon.jpg" alt="Logo" width="200" />
-
+<img src="pictures/Neon db.png " alt="Logo" width="800" />
 
 ### 5. Redis
 Redis is employed for caching and session management, improving the overall speed and efficiency of the application.
@@ -70,6 +70,39 @@ Deployment is a crucial part of any SaaS application. In this project, I am expl
 
 <img src="pictures/railway.jpg" alt="Logo" width="200" />
 
+## Continuous Integration and Testing with GitHub Actions
+
+In my project, I use GitHub Actions to automate testing and deployment, ensuring that my code is reliable and of high quality. I've set up multiple workflows to handle different aspects of the application, such as setting up the environment, integrating with the database, and managing secrets.
+
+### GitHub Actions Workflows 
+
+1. **Test Django Basic:** This workflow sets up the Python environment, installs the necessary dependencies, and runs Django tests to check the basic functionality of the application.
+
+2. **Test Django Environment Variables:** In this workflow, I ensure that the application operates correctly with production-like environment variables, including disabling Django's debug mode and generating a secure secret key.
+
+
+3. **Test Django with Actions Secret Database URL:** This workflow tests the application against a Neon database. It securely retrieves the database connection URL from GitHub Secrets, allowing me to validate database interactions without exposing sensitive information.
+
+4. **Branch Neon DB for Django Tests:** This advanced workflow branches a Neon database specifically for testing. It creates a new branch in the Neon database for each CI run, runs the Django tests against this branch, and then cleans up the branch afterward. This approach ensures that my tests are executed in a clean, temporary environment that closely simulates production.
+
+5. **Scheduled Production Worker:** I use this workflow to automate routine maintenance tasks, such as performing database migrations, synchronizing user subscriptions, and cleaning up any dangling Stripe subscriptions. It's scheduled to run periodically, ensuring these tasks are consistently and reliably handled.
+
+### Example: Branch Neon DB for Django Tests
+
+In the "Branch Neon DB for Django Tests" workflow, I dynamically create a new Neon database branch each time the tests are triggered. This workflow:
+
+<img src="pictures/neon.png" />
+<img src="pictures/envVar.png" />
+<img src="pictures/actions.png" />
+
+- Installs the Neon CLI.
+- Generates a unique branch name based on the GitHub run ID.
+- Creates a new branch in the Neon database specifically for isolated testing.
+- Sets up a connection string to this branch and passes it to the Django environment.
+- Runs the necessary database migrations and Django tests.
+- Cleans up the Neon database branch after the tests complete, ensuring no lingering resources.
+
+This approach allows me to run tests in an environment that mirrors production while maintaining isolation, so the production database remains unaffected.
 
 
 ## Getting Started
