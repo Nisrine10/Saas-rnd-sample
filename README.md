@@ -1,7 +1,7 @@
 
 
 # SaaS-App Project
-
+saas-rnd-sample-production-9686.up.railway.app
 
 This project is a part of my ongoing journey to master the art of building Software as a Service (SaaS) applications. Through this endeavor, I'm not just learning how to write code but also how to architect scalable, maintainable, and efficient systems. The goal is to create a solid foundation that can be reused across different SaaS products while leveraging modern web development tools and best practices.
 
