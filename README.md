@@ -109,7 +109,7 @@ This approach allows me to run tests in an environment that mirrors production w
 <img src="pictures/MainPage2.png" />
 
 * **Sign Up Page:** 
-<img src="pictures/SignUp.png" />
+<img src="pictures/Signup.png" />
 
 * **Sending email verification:** 
 <img src="pictures/verifyemail.png" />
