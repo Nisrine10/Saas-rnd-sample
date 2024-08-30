@@ -114,6 +114,7 @@ This approach allows me to run tests in an environment that mirrors production w
 * **Sending email verification:** 
 <img src="pictures/verifyemail.png" />
 
+
 * **Login Page:** 
 <img src="pictures/login.png" />
 
@@ -123,6 +124,10 @@ This approach allows me to run tests in an environment that mirrors production w
 
 * **Reset Password:** 
 <img src="pictures/resetPaswd.png" />
+<img src="pictures/email.png" />
+<img src="pictures/email2.png" />
+<img src="pictures/email3.png" />
+<img src="pictures/email4.png" />
 
 * **Home Page:** 
 <img src="pictures/home.png" />
