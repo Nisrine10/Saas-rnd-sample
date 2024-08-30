@@ -103,14 +103,41 @@ In the "Branch Neon DB for Django Tests" workflow, I dynamically create a new Ne
 - Cleans up the Neon database branch after the tests complete, ensuring no lingering resources.
 
 This approach allows me to run tests in an environment that mirrors production while maintaining isolation, so the production database remains unaffected.
+## Screeshots of the Saas application:
+ **Main Page:** 
+<img src="pictures/MainPage.png" />
+<img src="pictures/MainPage2.png" />
 
+**Sign Up Page:** 
+<img src="pictures/SignUp.png" />
+
+**Sending email verification:** 
+<img src="pictures/verifyemail.png" />
+
+**Login Page:** 
+<img src="pictures/login.png" />
+
+**Login with Github:** 
+
+<img src="pictures/SignwithGit.png" />
+<img src="pictures/SignwithGit2.png" />
+
+**Reset Password:** 
+<img src="pictures/resetPaswd.png" />
+
+**Home Page:** 
+<img src="pictures/home.png" />
+
+**Pricing and Billing Page:** 
+<img src="pictures/pricing.png" />
+<img src="pictures/payement.png" />
+
+**Sign out Page:** 
+<img src="pictures/signout.png" />
 
 ## Getting Started
 
-
 ### Create Virtual Environment
-
-
 
 *Windows*
 ```bash
